@@ -49,16 +49,16 @@ def feed():
   gen.title(os.environ['TITLE'])
   gen.link(href=os.environ['SELF'], rel='self')
   gen.link(href=os.environ['LINK'], rel='alternate')
-  for k in db.keys():
+  for k in sorted(db.keys()):
     fields = json.loads(db[k])
-    if 'URL' not in fields:
+    if 'URL' not in fields or fields.get('Save for later'):
       continue
 
     entry = gen.add_entry()
     entry.link(href=fields['URL'])
     entry.id(fields['URL'])
     entry.title(fields.get('Title', fields['URL']))
-    entry.published(k.split('_')[0])
+    entry.updated(k.split('_')[0])
 
     commentary = fields.get('Commentary')
     desc = fields.get('Description')
