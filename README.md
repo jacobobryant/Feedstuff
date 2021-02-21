@@ -1,6 +1,6 @@
 # Feedstuff
 
-Some code for social networking via Atom feeds.
+Some code for sharing stuff you like via Atom feeds.
 
 Conceptually, this is nothing new. However, I hope the implementation I've come up with is helpful for others.
 The more convenient it is to use protocols, the more people will actually use them.
