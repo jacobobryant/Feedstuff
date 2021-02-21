@@ -30,7 +30,7 @@ You publish a (paginated) Atom feed that describes your interactions with conten
 ```
 
 You follow other people by subscribing to their feeds. If you don't already use a feed reader, you can subscribe via email with [Blogtrottr](https://blogtrottr.com/).
-You should subscribe to my feed: `https://feed.jacobobryant.com/`.
+You should subscribe to my feed: `https://feed.jacobobryant.com/` ([click here](https://blogtrottr.com/?subscribe=https://feed.jacobobryant.com/) to subscribe with Blogtrottr).
 
 ## Implementation
 
